@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet" />
+
+    <title>Loan App</title>
+  </head>
+  <body>
+    <!-- This is the header section -->
+    <header class="header">
+      <div class="header-contact">
+        <div style="display: flex; gap: 10px; align-items: center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#fff"
+          >
+            <path
+              d="M777.61-140q-113.07 0-227.19-52.58-114.11-52.58-209.69-148.34-95.57-95.77-148.15-209.7Q140-664.54 140-777.61q0-18.17 12-30.28T182-820h130.46q15.15 0 26.73 9.89 11.58 9.88 14.73 24.42L376.85-668q2.38 16.38-1 28.15-3.39 11.77-12.16 19.77l-92.38 89.93q22.3 40.84 50.96 77.27 28.65 36.42 62.04 69.57 32.92 32.93 70 61.16 37.08 28.23 80.08 52.54l89.76-90.54q9.39-9.77 22.74-13.7 13.34-3.92 27.73-1.92l111.07 22.62q15.15 4 24.73 15.46t9.58 26V-182q0 18-12.11 30t-30.28 12ZM242.92-586.92l71.39-68.31q1.92-1.54 2.5-4.23.58-2.69-.19-5l-17.39-89.39q-.77-3.07-2.69-4.61-1.92-1.54-5-1.54H206q-2.31 0-3.85 1.54-1.53 1.54-1.53 3.85 3.07 41 13.42 83.3 10.34 42.31 28.88 84.39Zm348 345.69q39.77 18.54 82.96 28.35 43.2 9.8 80.73 11.65 2.31 0 3.85-1.54t1.54-3.85v-84.15q0-3.08-1.54-5t-4.61-2.69l-84-17.08q-2.31-.77-4.04-.19-1.73.58-3.66 2.5l-71.23 72Zm-348-345.69Zm348 345.69Z"
+            />
+          </svg>
+          <p style="position: relative; font-size: 14px; color: white;">(512) 803-1339</p>
+        </div>
+        <div class="divider"></div>
+        <div>NMLS #1268485</div>
+      </div>
+      <div class="main-header">
+        <!-- Logo -->
+         <a href="index.html">
+          <div class="logo">
+            <img src="/images/logo.png" class="logo-img" alt="" />
+            <h1 class="logo-text">Bluepeak Lending</h1>
+          </div>
+         </a>
+        
+
+        <!-- Navigations links -->
+        <div class="nav">
+          <div class="nav-links">
+            <div style="position: relative;">
+              <div class="nav-link"><a href="/index.html">Home</a></div>
+            </div>
+            <div class="nav-link"><a href="about.html">About</a></div>
+            <div class="nav-link trigger">Programs</div>
+            <div class="nav-link"><a href="/careers.html">Careers</a></div>
+          </div>
+          <!-- Loan programs dropdown -->
+            <div>
+              <div class="nav-dropdown programmes large-dropdown" style="height: fit-content; position: absolute; margin-left: -250px; background-color: white; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.085);">
+                <div style="display: flex;  flex-direction: column;">
+                  <div class="link">
+                    <a href="business.html">Business Loan</a>
+                  </div>
+                  <div class="link">
+                    <a href="mortgage.html">Mortgage Loan</a>
+                  </div>
+                  <div class="link">
+                    <a href="school.html">School Loan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <a href="apply.html" style="cursor: pointer;">
+            <button
+              class="nav-btn"
+              style="display: flex; align-items: center; gap: 10px; border-radius: 5px;"
+            >
+              Apply now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#fff"
+              >
+                <path
+                  d="M665.08-450H210q-12.77 0-21.38-8.62Q180-467.23 180-480t8.62-21.38Q197.23-510 210-510h455.08L458.31-716.77q-8.92-8.92-8.81-20.88.12-11.96 9.42-21.27 9.31-8.69 21.08-9 11.77-.31 21.08 9l253.61 253.61q5.62 5.62 7.92 11.85 2.31 6.23 2.31 13.46t-2.31 13.46q-2.3 6.23-7.92 11.85L501.08-201.08q-8.31 8.31-20.58 8.5-12.27.19-21.58-8.5-9.3-9.31-9.3-21.38 0-12.08 9.3-21.39L665.08-450Z"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+
+        <!-- Hidden side nav button -->
+        <div class="nav-button" style="flex-direction: column; gap: 5px; transform: rotate(180deg);">
+          <div class="bar bar1" style="background-color: black; width: 25px; border-radius: 20px; height: 3px;"></div>
+          <div class="bar bar2" style="background-color: black; width: 35px; border-radius: 20px; height: 3px;"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- This space is for the side nav -->
+    <aside class="side-nav">
+      <div class="nav-container" style="padding: 110px 0px; height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <a href="index.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Home
+          </div>
+          </a>
+          
+          <a href="about.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            About
+          </div>
+          </a>
+          
+          <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Loan Programs
+          </div>
+          
+          <div class="mobile-dropdown programmes" style="background-color: rgb(235, 235, 235); height: 0px; overflow: hidden; transition: height 0.3s;">
+            <div style="display: flex; padding: 20px 20px; flex-direction: column; gap: 20px;">
+              <a href="business.html">
+                <div>
+                  Business Loan
+                </div>
+              </a>
+
+              <a href="mortgage.html">
+                <div>
+                  Mortgage Loan
+                </div>
+              </a>
+
+              <a href="school.html">
+                <div>
+                  School Loan
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <a href="careers.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+              Careers
+            </div>
+          </a>
+          
+          <a href="apply.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Apply now
+          </div>
+          </a>
+          
+        </div>
+        </div>
+      </div> 
+    </aside>
+
+    <!-- This is the hero section for this page -->
+    <div class="mortgage-hr">
+      <div class="mh-text">
+        <div>
+           <h1 class="mh-text1">Mortgage Loans</h1>
+            <p class="mh-text2">
+            Your dream home is within reach with our tailored mortgage solutions. Save $1000s on your mortgage with our expert guidance and competitive rates.
+            </p> 
+        </div>
+        
+        <div>
+            <a href="/apply.html">
+                <button style="padding: 14px 50px; font-size: 16px; background-color: transparent; font-family: 'Montserrat', sans-serif; color: white; border-radius: 5px; border: 1px solid white;">Apply now</button>
+            </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- The Why us section -->
+    <div class="whyus-section" style="padding-top: 50px;">
+      <div class="wu-header" style="display: flex; font-weight: 500; flex-direction: column; gap: 3px; justify-content: center; align-items: center;">
+    
+        <div style="position: relative;">
+            <p class="mr-head">
+                Adjustable Rate Mortgage
+            </p>
+            <div style="height: 2px; background: #1370cd; width: 80px; position: absolute; left: 0; margin-top: -10px; border-radius: 2px;"></div>
+        </div>
+      </div>
+
+      <!-- why us details -->
+      <div class="wu-details">
+        <div class="wu-image">
+          <img src="/images/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf.jpg" class="wu-img" alt="" />
+        </div>
+
+        <div class="wu-ui" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+
+            <div style="line-height: 180%; font-size: 14px; line-height: 170%;">An ARM is an Adjustable Rate Mortgage. Unlike fixed rate mortgages
+                 that have an interest rate that remains the same for the life of the loan,
+                  the interest rate on an ARM will change periodically. The initial interest
+                   rate of an ARM is lower than that of a fixed rate mortgage, consequently, 
+                   an ARM maybe a good option to consider if you plan to own your home for only
+                    a few years; you expect an increase in future earnings; or, the prevailing interest
+                     rate for a fixed mortgage is too high.
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 40px;">
+                <p style="font-weight: 500;">Am i qualified ?</p>
+                
+                <p style="font-size: 14px; line-height: 150%; margin-top: -10px;">
+                    Most homeowners get into adjustable-rate mortgages 
+                    for the lower initial payment, and then usually refinance 
+                    the loan when the fixed period ends. At that time, the interest 
+                    rate becomes variable, or adjustable, and the homeowner
+                     would likely refinance into another ARM, 
+                     something fixed, or sell the home outright.
+                </p>
+            </div>
+
+            <div style="display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+                <a href="/apply.html">
+                    <button style="background-color: #1370cd; padding: 13px 50px; border: none; color: white; font-size: 16px;">Apply now</button>
+                </a>                
+                
+                <button style="background-color: transparent; padding: 13px 50px; border: 1px solid #1370cd; color: #1370cd; font-size: 16px;">Talk to an expert</button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo" style="width: 30px; padding: 10px; display: flex; justify-content: center; align-items: center; height: 30px; background-color: white; border-radius: 10px; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);">
+          <img src="/images/logo.png" alt="" class="footer-logo-img">
+        </div>
+
+        <div class="footer-links" style="margin-top: -15px;">
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Solutions</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Business Loans</a>
+              <a href="">Mortgage Loans</a>
+              <a href="">School Loans</a>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Company</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Contact</a>
+              <a href="">Support</a>
+              <a href="/about.html">About us</a>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Learn</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Blog</a>
+              <a href="">Guides</a>
+              <a href="">Template</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer-email-form" style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-weight: 500;">
+            Write us an email
+          </div>
+          <form style="display: flex; align-items: center; gap: 0;" onsubmit="event.preventDefault(); /* handle submit here */"></form>
+            <input type="email" placeholder="Your email address" required style="padding: 10px 40px 10px 12px; border-radius: 5px 0 0 5px; border: 1px solid #ccc; outline: none; font-size: 14px; width: 220px;">
+            <button type="submit" style="background: #1370cd; color: #fff; border: none; border-radius: 0 5px 5px 0; padding: 10px 18px; cursor: pointer; font-size: 14px; position: relative; right: 2px;">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top: 100px;">
+        <hr style="border: 1px solid rgba(0, 0, 0, 0.045);">
+        <div style="width: 100%; display: flex; justify-content: center;">
+          <p style="font-size: 12px;">@BluepeakLending 2024. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

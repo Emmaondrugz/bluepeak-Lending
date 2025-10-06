@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet" />
+
+    <title>Loan App</title>
+  </head>
+  <body>
+    <!-- This is the header section -->
+    <header class="header">
+      <div class="header-contact">
+        <div style="display: flex; gap: 10px; align-items: center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#fff"
+          >
+            <path
+              d="M777.61-140q-113.07 0-227.19-52.58-114.11-52.58-209.69-148.34-95.57-95.77-148.15-209.7Q140-664.54 140-777.61q0-18.17 12-30.28T182-820h130.46q15.15 0 26.73 9.89 11.58 9.88 14.73 24.42L376.85-668q2.38 16.38-1 28.15-3.39 11.77-12.16 19.77l-92.38 89.93q22.3 40.84 50.96 77.27 28.65 36.42 62.04 69.57 32.92 32.93 70 61.16 37.08 28.23 80.08 52.54l89.76-90.54q9.39-9.77 22.74-13.7 13.34-3.92 27.73-1.92l111.07 22.62q15.15 4 24.73 15.46t9.58 26V-182q0 18-12.11 30t-30.28 12ZM242.92-586.92l71.39-68.31q1.92-1.54 2.5-4.23.58-2.69-.19-5l-17.39-89.39q-.77-3.07-2.69-4.61-1.92-1.54-5-1.54H206q-2.31 0-3.85 1.54-1.53 1.54-1.53 3.85 3.07 41 13.42 83.3 10.34 42.31 28.88 84.39Zm348 345.69q39.77 18.54 82.96 28.35 43.2 9.8 80.73 11.65 2.31 0 3.85-1.54t1.54-3.85v-84.15q0-3.08-1.54-5t-4.61-2.69l-84-17.08q-2.31-.77-4.04-.19-1.73.58-3.66 2.5l-71.23 72Zm-348-345.69Zm348 345.69Z"
+            />
+          </svg>
+          <p style="position: relative; font-size: 14px; color: white;">(512) 803-1339</p>
+        </div>
+        <div class="divider"></div>
+        <div>NMLS #1268485</div>
+      </div>
+      <div class="main-header">
+        <!-- Logo -->
+         <a href="index.html">
+          <div class="logo">
+            <img src="/images/logo.png" class="logo-img" alt="" />
+            <h1 class="logo-text">Bluepeak Lending</h1>
+          </div>
+         </a>
+        
+
+        <!-- Navigations links -->
+        <div class="nav">
+          <div class="nav-links">
+            <div style="position: relative;">
+              <div class="nav-link"><a href="/index.html">Home</a></div>
+              <div style="height: 2px; background: #1370cd; width: 30px; position: absolute; left: 0; bottom: -4px; border-radius: 2px;"></div>
+            </div>
+            <div class="nav-link"><a href="about.html">About</a></div>
+            <div class="nav-link trigger">Programs</div>
+            <div class="nav-link"><a href="/careers.html">Careers</a></div>
+          </div>
+          <!-- Loan programs dropdown -->
+            <div>
+              <div class="nav-dropdown programmes large-dropdown" style="height: fit-content; position: absolute; margin-left: -250px; background-color: white; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.085);">
+                <div style="display: flex;  flex-direction: column;">
+                  <div class="link">
+                    <a href="business.html">Business Loan</a>
+                  </div>
+                  <div class="link">
+                    <a href="mortgage.html">Mortgage Loan</a>
+                  </div>
+                  <div class="link">
+                    <a href="school.html">School Loan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <a href="apply.html" style="cursor: pointer;">
+            <button
+              class="nav-btn"
+              style="display: flex; align-items: center; gap: 10px; border-radius: 5px;"
+            >
+              Apply now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#fff"
+              >
+                <path
+                  d="M665.08-450H210q-12.77 0-21.38-8.62Q180-467.23 180-480t8.62-21.38Q197.23-510 210-510h455.08L458.31-716.77q-8.92-8.92-8.81-20.88.12-11.96 9.42-21.27 9.31-8.69 21.08-9 11.77-.31 21.08 9l253.61 253.61q5.62 5.62 7.92 11.85 2.31 6.23 2.31 13.46t-2.31 13.46q-2.3 6.23-7.92 11.85L501.08-201.08q-8.31 8.31-20.58 8.5-12.27.19-21.58-8.5-9.3-9.31-9.3-21.38 0-12.08 9.3-21.39L665.08-450Z"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+
+        <!-- Hidden side nav button -->
+        <div class="nav-button" style="flex-direction: column; gap: 5px; transform: rotate(180deg);">
+          <div class="bar bar1" style="background-color: black; width: 25px; border-radius: 20px; height: 3px;"></div>
+          <div class="bar bar2" style="background-color: black; width: 35px; border-radius: 20px; height: 3px;"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- This space is for the side nav -->
+    <aside class="side-nav">
+      <div class="nav-container" style="padding: 110px 0px; height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <a href="index.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Home
+          </div>
+          </a>
+          
+          <a href="about.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            About
+          </div>
+          </a>
+          
+          <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Loan Programs
+          </div>
+          
+          <div class="mobile-dropdown programmes" style="background-color: rgb(235, 235, 235); height: 0px; overflow: hidden; transition: height 0.3s;">
+            <div style="display: flex; padding: 20px 20px; flex-direction: column; gap: 20px;">
+              <a href="business.html">
+                <div>
+                  Business Loan
+                </div>
+              </a>
+
+              <a href="mortgage.html">
+                <div>
+                  Mortgage Loan
+                </div>
+              </a>
+
+              <a href="school.html">
+                <div>
+                  School Loan
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <a href="careers.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+              Careers
+            </div>
+          </a>
+          
+          <a href="apply.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Apply now
+          </div>
+          </a>
+          
+        </div>
+        </div>
+      </div> 
+    </aside>
+
+    <!-- This is the Main section -->
+    <div class="hero-section">
+      <!-- Hero text -->
+      <div class="hero-text">
+        <div class="hero-text1">
+          <span style="color: #1370cd">Swift</span><br class="break"/> funding for your
+          <span style="color: #97334b">business.</span>
+        </div>
+        <p class="hero-text2">
+          Access credit, buy now pay later, and grow your money with ease only
+          on Bluepeak Lending
+        </p>
+
+        <!-- Hero Buttons -->
+        <div class="hero-btns">
+          <a href="/about.html">
+            <button class="hero-btn" style="background-color: #1370cd">
+            Learn More
+          </button>
+          </a>
+          
+          <a href="/apply.html">
+            <button
+            class="hero-btn"
+            style="
+              background-color: white;
+              border: 2px solid #1370cd;
+              color: #1370cd;
+              "
+            >
+              Apply Now
+            </button>
+          </a>
+          
+        </div>
+
+        <div class="hero-offers">
+          <!-- offers -->
+          <div style="display: flex; align-items: center; gap: 10px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#1370cd"
+            >
+              <path
+                d="M395.92-410.77 480-461.54l84.08 50.77-22.47-95.92 74.24-64-97.31-8.23L480-669.23l-38.54 90.31-97.31 8.23 74.24 64-22.47 95.92ZM220-150v-670h520v670L480-261.54 220-150Z"
+              />
+            </svg>
+            <p>All on your terms</p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 10px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#1370cd"
+            >
+              <path
+                d="M395.92-410.77 480-461.54l84.08 50.77-22.47-95.92 74.24-64-97.31-8.23L480-669.23l-38.54 90.31-97.31 8.23 74.24 64-22.47 95.92ZM220-150v-670h520v670L480-261.54 220-150Z"
+              />
+            </svg>
+            <p>Flexible payment</p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 10px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#1370cd"
+            >
+              <path
+                d="M395.92-410.77 480-461.54l84.08 50.77-22.47-95.92 74.24-64-97.31-8.23L480-669.23l-38.54 90.31-97.31 8.23 74.24 64-22.47 95.92ZM220-150v-670h520v670L480-261.54 220-150Z"
+              />
+            </svg>
+            <p>No hidden fees</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero image -->
+      <div class="hero-image">
+        <img src="/images/hero-img.png" class="hero-img" alt="" />
+      </div>
+    </div>
+
+    <!-- Services section -->
+    <div class="services-section">
+      <div class="services-container">
+        <div class="services-header">
+          <div class="sh-1">
+            <p style="color: #1370cd; font-weight: 500">Getting Started </p>
+            <h1 class="sh-text1">Experience that <span>grows</span> with your scale</h1>
+          </div>
+
+          <div class="sh-2">
+            <p class="sh-text2">
+              By streamlining the process, borrowers can focus on their new home
+              rather than getting bogged down by paperwork and delays.
+            </p>
+          </div>
+        </div>
+
+        <!-- services -->
+        <div class="services-boxes">
+          <div class="services-box">
+            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #1370cd; border-radius: 5px; padding: 5px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#fff"
+              >
+                <path
+                  d="M335.38-809.23q-6.55 0-10.97-4.47-4.41-4.47-4.41-11.12 0-6.64 4.41-10.91 4.42-4.27 10.97-4.27h282.7q7.31 0 11.23 4.56 3.92 4.57 3.92 10.5 0 5.94-3.4 10.82-3.41 4.89-11.75 4.89h-282.7Zm-120 135.38q-6.55 0-10.97-4.47-4.41-4.47-4.41-11.11 0-6.65 4.41-10.92 4.42-4.27 10.97-4.27h267.31q7.32 0 11.24 4.57 3.92 4.56 3.92 10.5 0 5.93-3.41 10.82-3.4 4.88-11.75 4.88H215.38Zm-120 135.39q-6.55 0-10.97-4.47Q80-547.4 80-554.05q0-6.64 4.41-10.91 4.42-4.27 10.97-4.27h251.93q7.31 0 11.23 4.56 3.92 4.57 3.92 10.5 0 5.94-3.4 10.82-3.41 4.89-11.75 4.89H95.38Zm519.39 123L505.92-524.31 300.08-319.23q-6.93 6.92-6.93 16.92 0 10 6.93 16.93l75 75q6.92 7.69 16.92 7.69 10 0 16.92-7.69l205.85-205.08Zm-86.62-131.08L637-437.69l203.77-203.77q6.92-6.92 6.92-17.69 0-10.77-6.92-17.7l-73.46-73.46q-6.93-6.92-17.69-6.92-10.77 0-17.7 6.92L528.15-546.54Zm-33.23-11L648-404.46 435.54-192q-16.69 16.69-43.27 16.69-26.58 0-44.04-16.69l-11.77-12.54L290.92-159q-4.23 4.23-9.61 6.23-5.39 2-9.85 2h-46.23q-8.31 0-11.5-9.11-3.19-9.12 3.31-15.62l73.73-73.73-7.08-7.85q-18.92-18.15-18.81-44.73.12-26.57 19.04-45.5l211-210.23Zm0 0 217-217q16.23-16.23 39.16-16.23 22.92 0 39.15 16.23L863.77-701q16.23 16.23 16.11 40.5-.11 24.27-16.34 40.5L648-404.46 494.92-557.54Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 style="font-size: 20px; font-weight: 500">
+                Quick Application
+              </h1>
+              <p>
+                Users can complete their loan request in just a few minutes with
+                an easy, paperless process.
+              </p>
+            </div>
+          </div>
+
+          <div class="services-box">
+            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #1370cd; border-radius: 5px; padding: 5px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#fff"
+              >
+                <path
+                  d="M155.17-140q-6.63 0-10.9-4.42-4.27-4.43-4.27-10.96v-34.47q0-6.53 4.49-10.96 4.48-4.42 11.11-4.42 6.63 0 10.9 4.42 4.27 4.43 4.27 10.96v34.47q0 6.53-4.49 10.96-4.48 4.42-11.11 4.42Zm162.32 0q-6.26 0-10.53-4.42-4.27-4.43-4.27-10.96v-205.24q0-6.53 4.48-10.96 4.48-4.42 11.11-4.42 5.87 0 10.53 4.42 4.65 4.43 4.65 10.96v205.24q0 6.53-4.85 10.96-4.86 4.42-11.12 4.42Zm162.29 0q-6.63 0-10.9-4.42-4.26-4.43-4.26-10.96v-134.47q0-6.53 4.48-10.96 4.49-4.42 11.12-4.42 6.63 0 10.9 4.42 4.26 4.43 4.26 10.96v134.47q0 6.53-4.48 10.96-4.49 4.42-11.12 4.42Zm162.33 0q-6.26 0-10.53-4.42-4.27-4.43-4.27-10.96v-212.93q0-6.54 4.48-10.96 4.48-4.42 11.1-4.42 5.88 0 10.53 4.42 4.66 4.42 4.66 10.96v212.93q0 6.53-4.86 10.96-4.86 4.42-11.11 4.42Zm162.29 0q-6.63 0-10.9-4.42-4.27-4.43-4.27-10.96v-354.47q0-6.53 4.49-10.96 4.48-4.42 11.11-4.42 6.63 0 10.9 4.42 4.27 4.43 4.27 10.96v354.47q0 6.53-4.49 10.96-4.48 4.42-11.11 4.42ZM559.88-510.54q-10.34 0-20.49-4.29-10.15-4.3-18.54-12.17L417.69-630.15q-6.92-6.93-17.69-6.93-10.77 0-17.69 6.93L166.62-415.46q-4.56 4.38-11.2 4.65-6.65.27-10.91-4.88-3.51-3.62-3.88-9.94-.37-6.33 3.75-10.52l217.47-216.23q8.17-8.07 18.04-11.77 9.88-3.7 20.11-3.7 10.23 0 20.3 3.73 10.06 3.74 18.62 11.74L542.31-549q6.92 6.92 17.69 6.92 10.77 0 17.69-6.92l215.93-215.92q4.38-4.39 11-4.77 6.61-.39 10.53 4.77 3.85 4.38 4.22 10.71.37 6.33-3.75 10.52L598.92-527q-8.24 8.33-18.47 12.4-10.22 4.06-20.57 4.06Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 style="font-size: 20px; font-weight: 500">Clear Tracking</h1>
+              <p>
+                They can monitor loan status, repayments, and balances in real
+                time, with full transparency.
+              </p>
+            </div>
+          </div>
+
+          <div class="services-box">
+            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #1370cd; border-radius: 5px; padding: 5px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#fff"
+              >
+                <path
+                  d="M468.08-153.08q8.84 0 18.04-3.65 9.19-3.65 14.73-9.96l316.23-316.46q15.3-15.31 24.11-31.81 8.81-16.5 8.81-36.58t-8.81-39q-8.81-18.92-24.11-34.23L662.46-779.38q-15.31-15.31-31.92-22.97-16.62-7.65-36.69-7.65-20.08 0-36.97 7.65-16.88 7.66-31.42 22.97l-38 38L564.62-664q10.69 10.92 18 26.35 7.3 15.42 7.3 32.03 0 29.54-21.04 50.08Q547.85-535 519.08-535q-18.08 0-31.89-5.19-13.81-5.19-25.5-16.12l-57.61-58.38q-6.93-6.93-17.7-6.93-10.76 0-17.69 6.93L210.77-456.77q-6.54 6.54-10.08 15.5T197.15-424q0 16.85 10.43 26.88 10.42 10.04 26.5 10.04 9.07 0 18.04-4.15 8.96-4.15 14.5-9.69l117-117q4.38-4.39 10.61-4.77 6.23-.39 11.39 4.77 5.15 5.15 5.15 11 0 5.84-5.15 11l-116.77 116q-6.54 7.3-10.08 16-3.54 8.69-3.54 17.77 0 15.07 10.92 26 10.93 10.92 26 10.92 9.08 0 18.04-3.65 8.96-3.66 14.5-9.97l126.23-126.23q4.39-4.38 10.62-4.77 6.23-.38 11.38 4.77 5.16 5.16 5.16 11 0 5.85-5.16 11l-126 125.23q-5.54 6.31-9.57 15.5-4.04 9.2-4.04 18.27 0 15.08 10.92 26 10.92 10.93 26 10.93 9.08 0 17.54-3.54 8.46-3.54 15-10.08L549-371q4.38-4.38 10.62-4.77 6.23-.38 11.38 4.77 5.15 5.15 5.15 11T571-349L444.77-222.77q-6.54 6.54-10.08 16t-3.54 17.54q0 16.31 10.7 26.23 10.69 9.92 26.23 9.92Zm0 30.77q-29.16 0-49.77-22.19-20.62-22.19-17.93-55.88-34 1.15-56.61-19.54-22.62-20.7-21.46-58.54-37.08.38-58.43-20.81-21.34-21.19-19.42-57.27-32.38 1.16-55.23-16.92-22.85-18.08-22.85-50.77 0-14.69 5.74-29.39 5.73-14.69 16.42-25.38l159.69-158.92q15.46-16.23 38.15-16.23 22.7 0 38.93 16.23L480.23-583q7.23 7.23 17.5 12.12Q508-566 519.31-566q15.31 0 27.57-11.88 12.27-11.89 12.27-27.97 0-9.84-4.65-18.88t-11.88-17.04L405-779.38q-15.31-15.31-32.31-22.97-17-7.65-37.07-7.65-20.08 0-36.2 7.65-16.11 7.66-31.42 22.97L141.38-652.77q-24.61 23.85-29.5 58.12-4.88 34.27 9.97 64.88 3.46 5.62 1.53 12.12-1.92 6.5-6.76 9.96-5.62 3.46-12.62 1.54-7-1.93-10.46-7.54-17.77-41.93-12.69-85.27 5.07-43.35 38.53-76.81L245-801.38q19.69-19.7 42.69-29.43 23-9.73 48.93-9.73 25.92 0 48.42 9.73t42.19 29.43l38 38 38-38q19.69-19.7 42.31-29.43 22.61-9.73 48.54-9.73 25.92 0 48.8 9.73 22.89 9.73 42.58 29.43l153.62 153.61q19.69 19.69 30.69 45t11 51.23q0 25.92-11 48.42t-30.69 42.2L522.85-144.69q-11.47 12.23-25.27 17.31-13.81 5.07-29.5 5.07ZM341.85-620.62Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 style="font-size: 20px; font-weight: 500">Smart Support</h1>
+              <p>
+                The app provides reminders, money tips, and rewards for good
+                repayment, making borrowing easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Why us section -->
+    <div class="whyus-section">
+      <div class="wu-header" style="display: flex; font-weight: 500; flex-direction: column; gap: 3px; justify-content: center; align-items: center;">
+        <p class="wu-text1" style="font-size: 14px; color: #1370cd;">WHY US</hp>
+        <p class="wu-text2">
+          Why Bluepeak Lending ?
+        </p>
+      </div>
+
+      <!-- why us details -->
+      <div class="wu-details">
+        <div class="wu-image">
+          <img src="/images/whyusimage.jpg" class="wu-img" alt="" />
+        </div>
+
+        <div class="wu-ui" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+
+            <div class="ui-text" style="line-height: 180%;">Get fast, custom loan quotes to compare. Fill out our streamlined, 100% online loan application.
+              Move through the approval process quickly and seamlessly. When you work with Texas Easy Mortgage, 
+              for your home loan or refinance, you can get your money and do what you want with it – usually in less than 30 days.
+            </div>
+
+            <!-- Details list -->
+            <div style="font-size: 14px; margin-top: 30px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg>
+                <span>Fast, custom loan quotes</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg>
+                <span>100% online application</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg>
+                <span>Quick approval process</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg>
+                <span>Funding in less than 30 days</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg>
+                <span>Do what you want with your money</span>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="wu-button-container" style="display: flex; justify-content: end; margin-bottom: 3px;">
+                <div style="color: #1370cd; display: flex; align-items: center; gap: 5px;">
+                  <a href="/apply.html" style="color: #1370cd;">
+                    <p>Get started</p>
+                  </a>  
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="M665.08-450H210q-12.77 0-21.38-8.62Q180-467.23 180-480t8.62-21.38Q197.23-510 210-510h455.08L458.31-716.77q-8.92-8.92-8.81-20.88.12-11.96 9.42-21.27 9.31-8.69 21.08-9 11.77-.31 21.08 9l253.61 253.61q5.62 5.62 7.92 11.85 2.31 6.23 2.31 13.46t-2.31 13.46q-2.3 6.23-7.92 11.85L501.08-201.08q-8.31 8.31-20.58 8.5-12.27.19-21.58-8.5-9.3-9.31-9.3-21.38 0-12.08 9.3-21.39L665.08-450Z"/></svg>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- why us details -->
+      <div class="wu-details2">
+
+        <div class="wu-ui" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="ui-text" style="line-height: 180%;">
+              Buying a home shouldn’t be complicated. With our simple mortgage process, you can apply online, 
+              get personalized loan options, and move toward closing with confidence. Whether you’re a first-time 
+              buyer or refinancing, we make home financing stress-free and transparent.
+            </div>
+
+            <div style="font-size: 14px; margin-top: 30px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc">
+                  <path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg><span>Easy online mortgage application</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc">
+                  <path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg><span>Personalized loan options to fit your needs</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc">
+                  <path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg><span>Guidance from application to closing</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc">
+                  <path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg><span>Competitive rates and clear terms</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc">
+                  <path d="m438-498.77-35.92-35.92Q393.15-543 381-543q-12.15 0-21.08 8.92Q351-525.15 351-513q0 12.15 8.92 21.08l51.77 52.38q10.85 10.85 25.81 10.85 14.96 0 25.81-10.85l136.77-137.38q8.92-8.93 9.11-20.89.19-11.96-9.11-21.27Q591.15-628 579-628q-12.15 0-21.08 8.92L438-498.77Zm42 237.23-158.77 68.15q-36.15 15.46-68.69-5.92Q220-220.69 220-259.46v-488.23Q220-778 241-799q21-21 51.31-21h375.38Q698-820 719-799q21 21 21 51.31v488.23q0 38.77-32.54 60.15-32.54 21.38-68.69 5.92L480-261.54Z"/></svg><span>Homeownership made simple and fast</span>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="wu-button-container2" style="display: flex; justify-content: start; margin-bottom: 3px;">
+                <div style="color: #1370cd; display: flex; align-items: center; gap: 5px;">
+                  <a href="/apply.html" style="color: #1370cd;">
+                    <p>Get started</p>
+                  </a>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1065bc"><path d="M665.08-450H210q-12.77 0-21.38-8.62Q180-467.23 180-480t8.62-21.38Q197.23-510 210-510h455.08L458.31-716.77q-8.92-8.92-8.81-20.88.12-11.96 9.42-21.27 9.31-8.69 21.08-9 11.77-.31 21.08 9l253.61 253.61q5.62 5.62 7.92 11.85 2.31 6.23 2.31 13.46t-2.31 13.46q-2.3 6.23-7.92 11.85L501.08-201.08q-8.31 8.31-20.58 8.5-12.27.19-21.58-8.5-9.3-9.31-9.3-21.38 0-12.08 9.3-21.39L665.08-450Z"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="wu-image">
+          <img src="/images/whyusimage2.jpg" class="wu-img" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Steps section -->
+    <div class="steps-section">
+      <div class="steps-container">
+        <div class="steps-header" style="margin-bottom: 20px;">
+          <div>
+            <p class="st-header-text1" style="color: #88c4ff;">STEPS</p>
+          <p class="st-header-text2" style="max-width: 600px;">Maximize Your returns with an account that grows.</p>
+          </div>
+        </div>
+
+        <div class="steps-boxes">
+          <div class="steps-box">
+            <div class="steps-digit">
+              1
+            </div>
+            <div style="gap: 10px; display: flex; flex-direction: column;">
+              <div class="steps-h" style="font-weight: 500;">
+                Get Your Quote
+              </div>
+              <div class="steps-p" style="font-size: 14px; line-height: 140%">
+                Start by getting a personalized quote from Bluepeak Lending and experience seamless customer support
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-box">
+            <div class="steps-digit">
+              2
+            </div>
+            <div style="gap: 10px; display: flex; flex-direction: column;">
+              <div class="steps-h" style="font-weight: 500;">
+                Submit Application
+              </div>
+              <div class="steps-p" style="font-size: 14px; line-height: 140%">
+                Complete your loan application in minutes with our simple process and get instant approval decision
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-box">
+            <div class="steps-digit">
+              3
+            </div>
+            <div style="gap: 10px; display: flex; flex-direction: column;">
+              <div class="steps-h" style="font-weight: 500;">
+                Receive Your Funds
+              </div>
+              <div class="steps-p" style="font-size: 14px; line-height: 140%">
+                Once approved, funds are deposited directly into your account within 24 hours or less securely
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- This sections talks about our mission -->
+    <div class="mission-section">
+      <div class="mission-container" style="flex-direction: column; gap: 50px;">
+        <div class="mission-header">
+          <p class="mission-text1" style="color: #1370cd; font-size: 14px;">OUR MISSION</p>
+          <p class="mission-text2">We've helped<br/> innovate peoples lives</p>
+          <p class="mission-text-3" style="margin-top: -5px; max-width: 400px;">Hundreds of applicants around the world have made big improvements with us.</p>
+        </div>
+
+        <div class="mission-stats">
+          <div class="stat-1" style="display: flex; justify-content: space-between; flex-direction: column;">
+            <div class="stat1-text">
+              3K+
+            </div>
+            <div>
+              Businesses already running on Bluepeak Lending
+            </div>
+          </div>
+
+          <div class="stat-1" style="display: flex; justify-content: space-between; flex-direction: column;">
+            <div>
+              Instant approval of Loans into your account
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px; justify-content: left;">
+              <div class="logo-ui" style="width: 50px; padding: 5px; display: flex; justify-content: center; align-items: center; height: 50px; background-color: white; border-radius: 10px; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);">
+                 <img src="/images/logo.png" class="logo-img" alt="" />
+              </div>
+
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#1370cd"><path d="M745.08-450H170q-12.77 0-21.38-8.62Q140-467.23 140-480t8.62-21.38Q157.23-510 170-510h575.08l-72.31-72.92q-8.92-8.93-8.81-20.89.12-11.96 9.42-21.27 9.31-8.69 21.39-9 12.08-.3 20.77 9l119.15 119.77q10.85 10.85 10.85 25.31 0 14.46-10.85 25.31L714.92-334.92q-8.31 8.3-20.57 8.5-12.27.19-21.58-8.5-9.31-9.31-9.31-21.39 0-12.07 9.31-21.38L745.08-450Z"/></svg>
+              </div>
+
+              <div class="logo-ui" style="width: 50px; padding: 5px; display: flex; justify-content: center; align-items: center; height: 50px; background-color: black; border-radius: 10px; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#fff"><path d="M235.95-286.05v-278.57q0-10.68 7.26-17.9 7.27-7.23 18-7.23 10.74 0 17.87 7.23 7.13 7.22 7.13 17.9v278.57q0 10.68-7.27 17.9-7.26 7.23-18 7.23-10.73 0-17.86-7.23-7.13-7.22-7.13-17.9Zm220.82 0v-278.57q0-10.68 7.26-17.9 7.27-7.23 18-7.23 10.74 0 17.87 7.23 7.12 7.22 7.12 17.9v278.57q0 10.68-7.26 17.9-7.26 7.23-18 7.23-10.73 0-17.86-7.23-7.13-7.22-7.13-17.9ZM135.9-140.41q-10.68 0-17.9-7.26-7.23-7.27-7.23-18 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h688.2q10.68 0 17.9 7.27 7.23 7.26 7.23 18 0 10.73-7.23 17.86-7.22 7.13-17.9 7.13H135.9Zm537.89-145.64v-278.57q0-10.68 7.27-17.9 7.26-7.23 18-7.23 10.73 0 17.86 7.23 7.13 7.22 7.13 17.9v278.57q0 10.68-7.26 17.9-7.27 7.23-18 7.23-10.74 0-17.87-7.23-7.13-7.22-7.13-17.9ZM827.54-660H130.03q-7.83 0-13.55-5.7-5.71-5.7-5.71-13.47v-13.35q0-5.21 2.84-9.73 2.83-4.52 7.6-6.98l330-173.85q13.56-6.97 28.72-6.97 15.16 0 28.86 6.97l329.05 172.85q5.23 3.18 8.31 8.18t3.08 11.44v8.49q0 9.63-6.09 15.88-6.1 6.24-15.6 6.24Z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- This is the footer section -->
+    <div class="cta">
+      <div class="cta-texts">
+        <p style="color: #88c4ff; font-size: 14px;">TRY NOW</p>
+        <p class="cta-text1">Ready to secure a loan for your Businesses</p>
+        <p class="cta-text2">We support individuals with small businesses, mortgages, school funding and many more.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="/apply.html">
+          <button class="cta-btn cta-btn1">Get started now</button>
+        </a>
+        
+        <a href="/about.html">
+          <button class="cta-btn cta-btn2">
+          Learn more
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="M652.54-664.36 262.31-274.51q-7.23 7.23-17.5 7.03-10.27-.19-17.5-7.42-7.23-7.23-7.23-17.15 0-9.92 7.23-17.46l389.85-390.23H267.92q-10.68 0-17.9-7.27-7.22-7.26-7.22-18 0-10.73 7.22-17.86 7.22-7.13 17.9-7.13h403.59q13.3 0 22.29 8.99 8.99 9 8.99 22.29v403.59q0 10.68-7.26 17.91-7.26 7.22-18 7.22t-17.86-7.22q-7.13-7.23-7.13-17.91v-349.23Z"/></svg>
+        </button>
+        </a>
+      </div>
+    </div>
+
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo" style="width: 30px; padding: 10px; display: flex; justify-content: center; align-items: center; height: 30px; background-color: white; border-radius: 10px; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);">
+          <img src="/images/logo.png" alt="" class="footer-logo-img">
+        </div>
+
+        <div class="footer-links" style="margin-top: -15px;">
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Solutions</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Business Loans</a>
+              <a href="">Mortgage Loans</a>
+              <a href="">School Loans</a>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Company</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Contact</a>
+              <a href="">Support</a>
+              <a href="/about.html">About us</a>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Learn</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Blog</a>
+              <a href="">Guides</a>
+              <a href="">Template</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer-email-form" style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-weight: 500;">
+            Write us an email
+          </div>
+          <form style="display: flex; align-items: center; gap: 0;" onsubmit="event.preventDefault(); /* handle submit here */"></form>
+            <input type="email" placeholder="Your email address" required style="padding: 10px 40px 10px 12px; border-radius: 5px 0 0 5px; border: 1px solid #ccc; outline: none; font-size: 14px; width: 220px;">
+            <button type="submit" style="background: #1370cd; color: #fff; border: none; border-radius: 0 5px 5px 0; padding: 10px 18px; cursor: pointer; font-size: 14px; position: relative; right: 2px;">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top: 100px;">
+        <hr style="border: 1px solid rgba(0, 0, 0, 0.045);">
+        <div style="width: 100%; display: flex; justify-content: center;">
+          <p style="font-size: 12px;">@BluepeakLending 2024. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  <script src="index.js"></script>
+</html>

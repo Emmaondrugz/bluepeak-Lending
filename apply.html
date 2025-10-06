@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- This is the loan main section -->
+    <div class="apply-main">
+      <!-- left section -->
+      <div class="am-left" style="padding: 30px">
+        <div
+          class="am-header"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              cursor: pointer;
+            "
+            onclick="goBack()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path
+                d="m313-440 196 196q12 12 11.5 28T508-188q-12 11-28 11.5T452-188L188-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l264-264q11-11 27.5-11t28.5 11q12 12 12 28.5T508-715L313-520h447q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440H313Z"
+              />
+            </svg>
+          </div>
+
+          <div class="logo">
+            <img src="/images/logo.png" class="logo-img" alt="" />
+          </div>
+        </div>
+
+        <div class="am-left-text" style="padding-top: 30px">
+          <h1 class="am-left-h1">Whats next ?</h1>
+          <p class="am-left-p">
+            Apply now and unlock your financial potential with our tailored loan
+            solutions.
+          </p>
+
+          <!-- Loan form -->
+          <form class="loan-form">
+            <div class="form-group">
+              <label for="name">Fullname</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="name"
+                  class="firstname"
+                  name="name"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  id="name"
+                  class="lastname"
+                  name="name"
+                  placeholder="Second Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group sp">
+              <label for="name">Email</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="email"
+                  placeholder="example@gmail.com"
+                  style="width: 100%"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group sp">
+              <label for="name">Phone number</label>
+              <div class="input-group">
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  class="number"
+                  placeholder="+1 234 567 8901"
+                  style="width: 100%"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group sp">
+              <label for="dob">Date of birth</label>
+              <div class="input-group">
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  class="dob"
+                  style="width: 100%"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Current Address</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="state"
+                  placeholder="New Mexico"
+                  required
+                />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="city"
+                  placeholder="Albuquerue"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="street"
+                  placeholder="Central Ave ST"
+                  required
+                />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="zipcode"
+                  placeholder="87101"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group sp">
+              <label for="name">Loan Amount</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="amount"
+                  name="amount"
+                  class="amount"
+                  placeholder="$10,000"
+                  style="width: 100%"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">CV/Resume</label>
+              <div class="input-group">
+                <div
+                  id="dropzone"
+                  style="
+                    border: 2px dashed #d0d7de;
+                    background-color: #fafbfc;
+                    height: 200px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onclick="document.getElementById('resume').click()"
+                >
+                  <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                    class="resume"
+                    accept=".pdf,.doc,.docx"
+                    style="display: none"
+                  />
+
+                  <div
+                    id="upload-content"
+                    style="text-align: center; pointer-events: none"
+                  >
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="margin-bottom: 12px; opacity: 0.6"
+                    >
+                      <path
+                        d="M7 18C4.23858 18 2 15.7614 2 13C2 10.2386 4.23858 8 7 8C7.55228 8 8 7.55228 8 7C8 4.23858 10.2386 2 13 2C15.7614 2 18 4.23858 18 7C18 7.55228 18.4477 8 19 8C21.2091 8 23 9.79086 23 12C23 14.2091 21.2091 16 19 16"
+                        stroke="#6b7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M12 13V21M12 13L9 16M12 13L15 16"
+                        stroke="#6b7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p
+                      style="
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #1f2937;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Click to upload or drag and drop
+                    </p>
+                    <p style="margin: 0; font-size: 14px; color: #6b7280">
+                      PDF, DOC, DOCX (Max 10MB)
+                    </p>
+                  </div>
+
+                  <div
+                    id="file-info"
+                    style="
+                      display: none;
+                      text-align: center;
+                      pointer-events: none;
+                      width: 100%;
+                      padding: 0 20px;
+                    "
+                  >
+                    <svg
+                      width="64"
+                      height="64"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="margin-bottom: 16px"
+                    >
+                      <circle cx="12" cy="12" r="10" fill="#2196f3" />
+                      <path
+                        d="M8 12L11 15L16 9"
+                        stroke="#ffffff"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p
+                      id="file-name"
+                      style="
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #1f2937;
+                        margin-bottom: 6px;
+                        word-break: break-word;
+                      "
+                    ></p>
+                    <p
+                      id="file-size"
+                      style="
+                        margin: 0;
+                        font-size: 14px;
+                        color: #6b7280;
+                        margin-bottom: 16px;
+                      "
+                    ></p>
+                    <button
+                      onclick="event.stopPropagation(); clearFile()"
+                      style="
+                        margin-top: 8px;
+                        padding: 8px 10px;
+                        background: #fff;
+                        border: 1px solid #d0d7de;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        color: #1f2937;
+                        pointer-events: auto;
+                        font-weight: 500;
+                        transition: all 0.2s ease;
+                      "
+                      class="file-btn"
+                      onmouseover="this.style.backgroundColor='#f6f8fa'"
+                      onmouseout="this.style.backgroundColor='#fff'"
+                    >
+                      Remove File
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">What else would you like to add ?</label>
+              <div class="input-group">
+                <textarea
+                  id="comments"
+                  name="comments"
+                  class="textarea"
+                  placeholder="Add any additional information or comments here..."
+                  style="
+                    width: 100%;
+                    min-height: 160px;
+                    resize: vertical;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    padding: 30px;
+                  "
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button
+              style="
+                width: 100%;
+                padding: 17px 20px;
+                background-color: #1065bc;
+                border: none;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                color: #fff;
+                border-radius: 10px;
+                font-weight: 500;
+                margin-bottom: 70px;
+              "
+              class="submit-btn"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- right section -->
+      <div class="am-right">
+        <img
+          src="images/man-sitting-down-office-job-interview-desk-with-his-employers.jpg"
+          alt="Job interview"
+          class="am-right-img"
+        />
+        <div class="am-right-text">
+          Get the support you need to move forward. Flexible loans designed
+          around your goals. Simple process, quick approval, and fair rates.
+          Your journey to financial freedom starts here.
+          <div style="margin-top: 20px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#fff"
+            >
+              <path
+                d="m270.31-173.08 78.77-258.61L142.31-580h256.31L480-850.76 561.38-580h256.31L610.92-431.69l78.77 258.61L480-332.62 270.31-173.08Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#fff"
+            >
+              <path
+                d="m270.31-173.08 78.77-258.61L142.31-580h256.31L480-850.76 561.38-580h256.31L610.92-431.69l78.77 258.61L480-332.62 270.31-173.08Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#fff"
+            >
+              <path
+                d="m270.31-173.08 78.77-258.61L142.31-580h256.31L480-850.76 561.38-580h256.31L610.92-431.69l78.77 258.61L480-332.62 270.31-173.08Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#fff"
+            >
+              <path
+                d="m270.31-173.08 78.77-258.61L142.31-580h256.31L480-850.76 561.38-580h256.31L610.92-431.69l78.77 258.61L480-332.62 270.31-173.08Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#fff"
+            >
+              <path
+                d="m270.31-173.08 78.77-258.61L142.31-580h256.31L480-850.76 561.38-580h256.31L610.92-431.69l78.77 258.61L480-332.62 270.31-173.08Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modalOverlay"
+      class="modal-overlay"
+      onclick="closeModalOnOverlay(event)"
+    >
+      <div class="modal">
+        <button class="close-button" onclick="closeModal()">&times;</button>
+
+        <div class="success-icon">
+          <svg class="checkmark" viewBox="0 0 50 50">
+            <path d="M10 25 L20 35 L40 15" stroke-dasharray="100" />
+          </svg>
+        </div>
+
+        <h2 class="modal-title">Application Submitted!</h2>
+        <p class="modal-subtitle">
+          Thank you for applying. Your loan application has been successfully
+          received and is being reviewed.
+        </p>
+
+        <div class="info-card">
+          <div class="info-item">
+            <svg
+              class="info-icon"
+              fill="none"
+              stroke="#667eea"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span class="info-text"
+              >Our team will review your application within 24-48 hours</span
+            >
+          </div>
+          <div class="info-item">
+            <svg
+              class="info-icon"
+              fill="none"
+              stroke="#667eea"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <span class="info-text"
+              >Check your email for updates and next steps</span
+            >
+          </div>
+          <div class="info-item">
+            <svg
+              class="info-icon"
+              fill="none"
+              stroke="#667eea"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <span class="info-text"
+              >We'll contact you if additional information is needed</span
+            >
+          </div>
+        </div>
+
+        <button class="action-button" onclick="closeModal()">
+          Got it, Thanks!
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function goBack() {
+        // Go back to the previous page
+        window.history.back();
+      }
+
+      // The code below handles drag and drop for file upload
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropzone = document.getElementById("dropzone");
+        const fileInput = document.getElementById("resume");
+        const uploadContent = document.getElementById("upload-content");
+        const fileInfo = document.getElementById("file-info");
+        const fileName = document.getElementById("file-name");
+        const fileSize = document.getElementById("file-size");
+
+        function displayFileInfo(file) {
+          const sizeInMB = (file.size / (1024 * 1024)).toFixed(2);
+          fileName.textContent = file.name;
+          fileSize.textContent = `${sizeInMB} MB`;
+
+          uploadContent.style.display = "none";
+          fileInfo.style.display = "block";
+          dropzone.classList.add("uploaded");
+        }
+
+        window.clearFile = function () {
+          fileInput.value = "";
+          uploadContent.style.display = "block";
+          fileInfo.style.display = "none";
+          dropzone.classList.remove("uploaded");
+        };
+
+        fileInput.addEventListener("change", function () {
+          const file = this.files[0];
+          if (file) {
+            displayFileInfo(file);
+          }
+        });
+
+        dropzone.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          dropzone.classList.add("dragover");
+        });
+
+        dropzone.addEventListener("dragleave", () => {
+          dropzone.classList.remove("dragover");
+        });
+
+        dropzone.addEventListener("drop", (e) => {
+          e.preventDefault();
+          dropzone.classList.remove("dragover");
+
+          const files = e.dataTransfer.files;
+          if (files.length > 0) {
+            const file = files[0];
+            const allowedTypes = [".pdf", ".doc", ".docx"];
+            const fileExtension =
+              "." + file.name.split(".").pop().toLowerCase();
+
+            if (allowedTypes.includes(fileExtension)) {
+              fileInput.files = files;
+              displayFileInfo(file);
+            } else {
+              alert("Please upload a PDF, DOC, or DOCX file");
+            }
+          }
+        });
+      });
+
+      dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        console.log("Dragging over dropzone"); // 👈 Add this line
+        dropzone.classList.add("dragover");
+      });
+
+      console.log("Script loaded successfully");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector(".loan-form");
+        form.addEventListener("submit", display_user_data);
+      });
+
+      function display_user_data(e) {
+        e.preventDefault();
+
+        const firstname = document.querySelector(".firstname").value.trim();
+        const lastname = document.querySelector(".lastname").value.trim();
+        const email = document.querySelector(".email").value.trim();
+        const phone = document.querySelector(".number").value.trim();
+        const dob = document.querySelector(".dob").value.trim();
+        const state = document.querySelector(".state").value.trim();
+        const city = document.querySelector(".city").value.trim();
+        const street = document.querySelector(".street").value.trim();
+        const zipcode = document.querySelector(".zipcode").value.trim();
+        const comment = document.querySelector(".textarea").value.trim();
+        const amount = document.querySelector(".amount").value.trim();
+
+        const fullName = `${firstname} ${lastname}`;
+        const address = `${street}, ${city}, ${state}, ${zipcode}`;
+
+        const toEmail = "contact@bluepeaklending.net"; // 👈 replace with your email
+        const subject = `Loan Application - ${fullName}`;
+
+        const body = `
+          Full Name: ${fullName}
+          Email: ${email}
+          Phone: ${phone}
+          Date of Birth: ${dob}
+          Address: ${address}
+          Amount Requested: ${amount}
+          Comment: ${comment}
+
+          (Please attach your resume before sending)
+          `;
+
+        // Encode data for Gmail URL
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+          toEmail
+        )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Open Gmail compose
+        window.open(gmailUrl, "_blank");
+
+        // display application sent modal
+        document.querySelector(".modal-overlay").classList.add("active");
+      }
+
+      // This function closes the modal
+      function closeModal() {
+        document.getElementById("modalOverlay").classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      function closeModalOnOverlay(event) {
+        if (event.target.id === "modalOverlay") {
+          closeModal();
+        }
+      }
+    </script>
+  </body>
+</html>

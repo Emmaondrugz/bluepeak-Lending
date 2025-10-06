@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- This is the header section -->
+    <header class="header">
+      <div class="header-contact">
+        <div style="display: flex; gap: 10px; align-items: center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#fff"
+          >
+            <path
+              d="M777.61-140q-113.07 0-227.19-52.58-114.11-52.58-209.69-148.34-95.57-95.77-148.15-209.7Q140-664.54 140-777.61q0-18.17 12-30.28T182-820h130.46q15.15 0 26.73 9.89 11.58 9.88 14.73 24.42L376.85-668q2.38 16.38-1 28.15-3.39 11.77-12.16 19.77l-92.38 89.93q22.3 40.84 50.96 77.27 28.65 36.42 62.04 69.57 32.92 32.93 70 61.16 37.08 28.23 80.08 52.54l89.76-90.54q9.39-9.77 22.74-13.7 13.34-3.92 27.73-1.92l111.07 22.62q15.15 4 24.73 15.46t9.58 26V-182q0 18-12.11 30t-30.28 12ZM242.92-586.92l71.39-68.31q1.92-1.54 2.5-4.23.58-2.69-.19-5l-17.39-89.39q-.77-3.07-2.69-4.61-1.92-1.54-5-1.54H206q-2.31 0-3.85 1.54-1.53 1.54-1.53 3.85 3.07 41 13.42 83.3 10.34 42.31 28.88 84.39Zm348 345.69q39.77 18.54 82.96 28.35 43.2 9.8 80.73 11.65 2.31 0 3.85-1.54t1.54-3.85v-84.15q0-3.08-1.54-5t-4.61-2.69l-84-17.08q-2.31-.77-4.04-.19-1.73.58-3.66 2.5l-71.23 72Zm-348-345.69Zm348 345.69Z"
+            />
+          </svg>
+          <p style="position: relative; font-size: 14px">(512) 803-1339</p>
+        </div>
+        <div class="divider"></div>
+        <div>NMLS #1268485</div>
+      </div>
+      <div class="main-header">
+        <!-- Logo -->
+         <a href="index.html">
+          <div class="logo">
+            <img src="/images/logo.png" class="logo-img" alt="" />
+            <h1 class="logo-text">Bluepeak Lending</h1>
+          </div>
+         </a>
+        
+
+        <!-- Navigations links -->
+        <div class="nav">
+          <div class="nav-links">
+            <div class="nav-link"><a href="/index.html">Home</a></div>
+            <div style="position: relative;">
+               <div class="nav-link"><a href="about.html">About</a></div>
+               <div style="height: 2px; background: #1370cd; width: 30px; position: absolute; left: 0; bottom: -4px; border-radius: 2px;"></div>
+            </div>
+ 
+            <div class="nav-link trigger">Programs</div>
+            <div class="nav-link"><a href="/careers.html">Careers</a></div>
+          </div>
+          <!-- Loan programs dropdown -->
+            <div>
+              <div class="nav-dropdown programmes large-dropdown" style="height: fit-content; position: absolute; margin-left: -250px; background-color: white; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.085);">
+                <div style="display: flex;  flex-direction: column;">
+                  <div class="link">
+                    <a href="business.html">Business Loan</a>
+                  </div>
+                  <div class="link">
+                    <a href="mortgage.html">Mortgage Loan</a>
+                  </div>
+                  <div class="link">
+                    <a href="school.html">School Loan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <a href="apply.html" style="cursor: pointer;">
+          <button
+            class="nav-btn"
+            style="display: flex; align-items: center; gap: 10px; border-radius: 5px;"
+          >
+            Apply now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="M665.08-450H210q-12.77 0-21.38-8.62Q180-467.23 180-480t8.62-21.38Q197.23-510 210-510h455.08L458.31-716.77q-8.92-8.92-8.81-20.88.12-11.96 9.42-21.27 9.31-8.69 21.08-9 11.77-.31 21.08 9l253.61 253.61q5.62 5.62 7.92 11.85 2.31 6.23 2.31 13.46t-2.31 13.46q-2.3 6.23-7.92 11.85L501.08-201.08q-8.31 8.31-20.58 8.5-12.27.19-21.58-8.5-9.3-9.31-9.3-21.38 0-12.08 9.3-21.39L665.08-450Z"
+              />
+            </svg>
+          </button>
+        </a>
+        </div>
+
+        <!-- Hidden side nav button -->
+        <div class="nav-button" style="flex-direction: column; gap: 5px; transform: rotate(180deg);">
+          <div class="bar bar1" style="background-color: black; width: 25px; border-radius: 20px; height: 3px;"></div>
+          <div class="bar bar2" style="background-color: black; width: 35px; border-radius: 20px; height: 3px;"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- This space is for the side nav -->
+    <aside class="side-nav">
+      <div class="nav-container" style="padding: 110px 0px; height: 100vh; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <a href="index.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Home
+          </div>
+          </a>
+          
+          <a href="about.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            About
+          </div>
+          </a>
+          
+          <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Loan Programs
+          </div>
+          
+          <div class="mobile-dropdown programmes" style="background-color: rgb(235, 235, 235); height: 0px; overflow: hidden; transition: height 0.3s;">
+            <div style="display: flex; padding: 20px 20px; flex-direction: column; gap: 20px;">
+              <a href="business.html">
+                <div>
+                  Business Loan
+                </div>
+              </a>
+
+              <a href="mortgage.html">
+                <div>
+                  Mortgage Loan
+                </div>
+              </a>
+
+              <a href="school.html">
+                <div>
+                  School Loan
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <a href="careers.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+              Careers
+            </div>
+          </a>
+          
+          <a href="apply.html">
+            <div class="mb-nav-link" style="border-bottom: 1px solid rgb(235, 235, 235); padding: 20px; font-weight: 500; font-size: 18px;">
+            Apply now
+          </div>
+          </a>
+          
+        </div>
+        </div>
+      </div> 
+    </aside>
+
+
+    <!-- This is the hero section for the about page -->
+    <div class="about-hr">
+      <div class="about-hr-text">
+        <div>
+          <p class="badge about-badge">About us</p>
+        <h1 class="hr-text1">We work as a Team</h1>
+        <p class="hr-text2">
+          We are committed to providing exceptional financial services that
+          empower individuals and businesses to achieve their goals and dreams.
+        </p>  
+        </div>
+        
+
+        <div class="awards">
+            <div class="award-container">
+                <div class="award">
+                    <p class="awards-text1">
+                    Top Mortgage Broker - Austin Region
+                    </p>
+                    <p class="awards-text2" style="margin-top: -5px;">
+                        Texas Association of Mortgage Professionals, 2022
+                    </p> 
+                </div>
+
+                <div style="padding: 10px; height: 24px; width: 24px; display: flex; align-items: center; justify-content: center; border-radius: 100%;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1065bc"><path d="m438-437.38-64.92-64.31q-8.31-8.31-20.58-8.5-12.27-.19-21.58 9.11-8.69 8.7-8.69 21.08 0 12.38 8.69 21.08l81.77 81.77q10.85 10.84 25.31 10.84 14.46 0 25.31-10.84l165.77-165.77q8.92-8.93 8.8-20.89-.11-11.96-8.8-21.27-9.31-9.3-21.39-9.61-12.07-.31-21.38 9L438-437.38ZM336.39-112.69l-55.31-93-104.62-22.47q-13.46-2.61-21.5-14.15-8.04-11.54-6.42-25l10.23-107.61-71.15-81.39q-9.23-9.84-9.23-23.69 0-13.85 9.23-23.69l71.15-81.39-10.23-107.61q-1.62-13.46 6.42-25t21.5-14.15l104.62-22.47 55.31-93q7.23-11.84 19.69-16.15 12.46-4.31 25.31 1.31L480-820.46l98.61-41.69q12.85-5.62 25.31-1.31 12.46 4.31 19.69 16.15l55.31 93 104.62 22.47q13.46 2.61 21.5 14.15 8.04 11.54 6.42 25l-10.23 107.61 71.15 81.39q9.23 9.84 9.23 23.69 0 13.85-9.23 23.69l-71.15 81.39 10.23 107.61q1.62 13.46-6.42 25t-21.5 14.15l-104.62 22.47-55.31 93q-7.23 11.84-19.69 16.15-12.46 4.31-25.31-1.31L480-139.54l-98.61 41.69q-12.85 5.62-25.31 1.31-12.46-4.31-19.69-16.15Z"/></svg>
+                </div>
+            </div>
+            <div class="award-container">
+            <div class="award">
+               <p class="awards-text1">
+              Excellence in Customer Service
+            </p>
+            <p class="awards-text2" style="margin-top: -5px;">
+                Austin Chamber of Commerce, 2023
+            </p> 
+            </div>
+
+            <div style="padding: 10px; height: 24px; width: 24px; display: flex; align-items: center; justify-content: center; border-radius: 100%;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1065bc"><path d="m438-437.38-64.92-64.31q-8.31-8.31-20.58-8.5-12.27-.19-21.58 9.11-8.69 8.7-8.69 21.08 0 12.38 8.69 21.08l81.77 81.77q10.85 10.84 25.31 10.84 14.46 0 25.31-10.84l165.77-165.77q8.92-8.93 8.8-20.89-.11-11.96-8.8-21.27-9.31-9.3-21.39-9.61-12.07-.31-21.38 9L438-437.38ZM336.39-112.69l-55.31-93-104.62-22.47q-13.46-2.61-21.5-14.15-8.04-11.54-6.42-25l10.23-107.61-71.15-81.39q-9.23-9.84-9.23-23.69 0-13.85 9.23-23.69l71.15-81.39-10.23-107.61q-1.62-13.46 6.42-25t21.5-14.15l104.62-22.47 55.31-93q7.23-11.84 19.69-16.15 12.46-4.31 25.31 1.31L480-820.46l98.61-41.69q12.85-5.62 25.31-1.31 12.46 4.31 19.69 16.15l55.31 93 104.62 22.47q13.46 2.61 21.5 14.15 8.04 11.54 6.42 25l-10.23 107.61 71.15 81.39q9.23 9.84 9.23 23.69 0 13.85-9.23 23.69l-71.15 81.39 10.23 107.61q1.62 13.46-6.42 25t-21.5 14.15l-104.62 22.47-55.31 93q-7.23 11.84-19.69 16.15-12.46 4.31-25.31-1.31L480-139.54l-98.61 41.69q-12.85 5.62-25.31 1.31-12.46-4.31-19.69-16.15Z"/></svg>
+            </div>
+            </div>
+            <div class="award-container">
+            <div class="award">
+               <p class="awards-text1">
+              Best Workplace for Financial Professionals
+            </p>
+            <p class="awards-text2" style="margin-top: -5px;">
+                Austin Business Journal, 2024
+            </p> 
+            </div>
+
+            <div style="padding: 10px; height: 24px; width: 24px; display: flex; align-items: center; justify-content: center; border-radius: 100%;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1065bc"><path d="m438-437.38-64.92-64.31q-8.31-8.31-20.58-8.5-12.27-.19-21.58 9.11-8.69 8.7-8.69 21.08 0 12.38 8.69 21.08l81.77 81.77q10.85 10.84 25.31 10.84 14.46 0 25.31-10.84l165.77-165.77q8.92-8.93 8.8-20.89-.11-11.96-8.8-21.27-9.31-9.3-21.39-9.61-12.07-.31-21.38 9L438-437.38ZM336.39-112.69l-55.31-93-104.62-22.47q-13.46-2.61-21.5-14.15-8.04-11.54-6.42-25l10.23-107.61-71.15-81.39q-9.23-9.84-9.23-23.69 0-13.85 9.23-23.69l71.15-81.39-10.23-107.61q-1.62-13.46 6.42-25t21.5-14.15l104.62-22.47 55.31-93q7.23-11.84 19.69-16.15 12.46-4.31 25.31 1.31L480-820.46l98.61-41.69q12.85-5.62 25.31-1.31 12.46 4.31 19.69 16.15l55.31 93 104.62 22.47q13.46 2.61 21.5 14.15 8.04 11.54 6.42 25l-10.23 107.61 71.15 81.39q9.23 9.84 9.23 23.69 0 13.85-9.23 23.69l-71.15 81.39 10.23 107.61q1.62 13.46-6.42 25t-21.5 14.15l-104.62 22.47-55.31 93q-7.23 11.84-19.69 16.15-12.46 4.31-25.31-1.31L480-139.54l-98.61 41.69q-12.85 5.62-25.31 1.31-12.46-4.31-19.69-16.15Z"/></svg>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="hr-image">
+        <img src="/images/industrial-designers-working-3d-model.jpg" class="hr-img" alt="">
+      </div>
+    </div>
+
+
+
+    <div class="ab2">
+        <div class="ab2-one">
+            <div class="ab2-clients">
+                <div style="display: flex; gap: 10px;" class="client-list">
+                    <div class="client">
+                        <div>
+                            <p class="comment comment1">
+                              Bluepeak Lending made the loan process so easy and stress-free. Their team was always available to answer my questions.
+                            </p>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                           <div>
+                                <p class="comment comment2">Maria Thompson</
+                                    p>
+                                <p style="font-size: 13px; color: #1a1a1a;">Homeowner</p>
+                            </div>
+                            <div class="quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1065bc"><path d="m271.23-298.85 68.39-118.46q-3.46 1.92-8.08 2.69t-9.23.77q-61 0-103.58-42.96-42.57-42.96-42.57-103.19 0-61 42.57-103.58 42.58-42.57 103.58-42.57 60.23 0 103.19 42.57Q468.46-621 468.46-560q0 21.08-5.11 39.23-5.12 18.15-14.97 34.62l-125.46 217.3q-3.84 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.84-15-8.62-15-.31-30Zm355.39 0L695-417.31q-3.46 1.92-8.08 2.69-4.61.77-9.23.77-61 0-103.57-42.96-42.58-42.96-42.58-103.19 0-61.38 42.58-103.77 42.57-42.38 103.57-42.38 60.23 0 103.19 42.57Q823.84-621 823.84-560q0 21.08-5.11 39.23-5.12 18.15-14.96 34.62l-125.46 217.3q-3.85 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.85-15-8.61-15-.3-30Z"/></svg>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div>
+                            <p class="comment comment1">
+                              I was impressed by their professionalism and quick turnaround. Highly recommend for anyone seeking a business loan!
+                            </p>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                           <div>
+                            <p class="comment comment2">Kevin Patel</p>
+
+                            <p style="font-size: 13px; color: #1a1a1a;">Small Business Owner</p>
+                            </div>
+                            <div class="quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1065bc"><path d="m271.23-298.85 68.39-118.46q-3.46 1.92-8.08 2.69t-9.23.77q-61 0-103.58-42.96-42.57-42.96-42.57-103.19 0-61 42.57-103.58 42.58-42.57 103.58-42.57 60.23 0 103.19 42.57Q468.46-621 468.46-560q0 21.08-5.11 39.23-5.12 18.15-14.97 34.62l-125.46 217.3q-3.84 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.84-15-8.62-15-.31-30Zm355.39 0L695-417.31q-3.46 1.92-8.08 2.69-4.61.77-9.23.77-61 0-103.57-42.96-42.58-42.96-42.58-103.19 0-61.38 42.58-103.77 42.57-42.38 103.57-42.38 60.23 0 103.19 42.57Q823.84-621 823.84-560q0 21.08-5.11 39.23-5.12 18.15-14.96 34.62l-125.46 217.3q-3.85 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.85-15-8.61-15-.3-30Z"/></svg>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px;" class="client-list">
+                    <div class="client">
+                        <div>
+                            <p class="comment comment1">
+                              The team at Bluepeak Lending truly cares about their clients. They guided me every step of the way and made sure I understood my options.
+                            </p>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                           <div>
+                            <p class="comment comment2">Samantha Lee</p>
+                            
+                            <p style="font-size: 13px; color: #1a1a1a;">First-Time Buyer</p>
+                            </div>
+                            <div class="quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1065bc"><path d="m271.23-298.85 68.39-118.46q-3.46 1.92-8.08 2.69t-9.23.77q-61 0-103.58-42.96-42.57-42.96-42.57-103.19 0-61 42.57-103.58 42.58-42.57 103.58-42.57 60.23 0 103.19 42.57Q468.46-621 468.46-560q0 21.08-5.11 39.23-5.12 18.15-14.97 34.62l-125.46 217.3q-3.84 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.84-15-8.62-15-.31-30Zm355.39 0L695-417.31q-3.46 1.92-8.08 2.69-4.61.77-9.23.77-61 0-103.57-42.96-42.58-42.96-42.58-103.19 0-61.38 42.58-103.77 42.57-42.38 103.57-42.38 60.23 0 103.19 42.57Q823.84-621 823.84-560q0 21.08-5.11 39.23-5.12 18.15-14.96 34.62l-125.46 217.3q-3.85 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.85-15-8.61-15-.3-30Z"/></svg>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div>
+                            <p class="comment comment1">
+                              Fast, friendly, and reliable service. I got my mortgage approved in record time. Thank you Bluepeak Lending!
+                            </p>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                           <div>
+                            <p class="comment comment2">David Nguyen</p>
+                            
+                            <p style="font-size: 13px; color: #1a1a1a;">Mortgage Client</p>
+                            </div>
+                            <div class="quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1065bc"><path d="m271.23-298.85 68.39-118.46q-3.46 1.92-8.08 2.69t-9.23.77q-61 0-103.58-42.96-42.57-42.96-42.57-103.19 0-61 42.57-103.58 42.58-42.57 103.58-42.57 60.23 0 103.19 42.57Q468.46-621 468.46-560q0 21.08-5.11 39.23-5.12 18.15-14.97 34.62l-125.46 217.3q-3.84 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.84-15-8.62-15-.31-30Zm355.39 0L695-417.31q-3.46 1.92-8.08 2.69-4.61.77-9.23.77-61 0-103.57-42.96-42.58-42.96-42.58-103.19 0-61.38 42.58-103.77 42.57-42.38 103.57-42.38 60.23 0 103.19 42.57Q823.84-621 823.84-560q0 21.08-5.11 39.23-5.12 18.15-14.96 34.62l-125.46 217.3q-3.85 6.7-10.54 10.85-6.69 4.15-15 4.15-17.23 0-25.85-15-8.61-15-.3-30Z"/></svg>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ab2-text">
+            <div>
+                <p class="badge about-badge">Reviews</p>
+                <p class="ab2-text1">What our clients say</p>
+                <p class="ab2-text2">Real stories from satisfied lenders all around the world who've experienced the impact of our service</p>
+            </div>
+            
+            <div class="ab-cta">
+                <div class="ab-cta-text">
+                    <p class="ab-cta-text1" style="font-size: 20px; font-weight: 500;">Ready to get started?</p>
+                    <p class="ab-cta-text2" style="font-size: 14px; margin-top: -10px; line-height: 140%;">Join thousands of satisfied clients who have achieved their financial goals with Bluepeak Lending.</p>
+                </div>
+
+                <a href="/apply.html">
+                  <button style="background-color: #1370cd; width: 150px; padding: 12px 25px; border: 2px solid white; color: white; border-radius: 5px;">
+                      Apply now
+                  </button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+     <footer>
+      <div class="footer-content">
+        <div class="footer-logo" style="width: 30px; padding: 10px; display: flex; justify-content: center; align-items: center; height: 30px; background-color: white; border-radius: 10px; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);">
+          <img src="/images/logo.png" alt="" class="footer-logo-img">
+        </div>
+
+        <div class="footer-links" style="margin-top: -15px;">
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Solutions</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Business Loans</a>
+              <a href="">Mortgage Loans</a>
+              <a href="">School Loans</a>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Company</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Contact</a>
+              <a href="">Support</a>
+              <a href="">About us</a>
+            </div>
+          </div>
+
+          <div class="footer-list">
+            <p class="link-heading" style="font-weight: 500;">Learn</p>
+            <div class="links" style="display: flex; flex-direction: column; gap: 15px;">
+              <a href="">Blog</a>
+              <a href="">Guides</a>
+              <a href="">Template</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer-email-form" style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-weight: 500;">
+            Write us an email
+          </div>
+          <form style="display: flex; align-items: center; gap: 0;" onsubmit="event.preventDefault(); /* handle submit here */"></form>
+            <input type="email" placeholder="Your email address" required style="padding: 10px 40px 10px 12px; border-radius: 5px 0 0 5px; border: 1px solid #ccc; outline: none; font-size: 14px; width: 220px;">
+            <button type="submit" style="background: #1370cd; color: #fff; border: none; border-radius: 0 5px 5px 0; padding: 10px 18px; cursor: pointer; font-size: 14px; position: relative; right: 2px;">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top: 100px;">
+        <hr style="border: 1px solid rgba(0, 0, 0, 0.045);">
+        <div style="width: 100%; display: flex; justify-content: center;">
+          <p style="font-size: 12px;">@BluepeakLending 2024. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
