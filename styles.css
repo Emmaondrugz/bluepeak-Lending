@@ -1441,6 +1441,10 @@ input:focus {
     width: 92% !important;
   }
 
+  select {
+    max-width: 97.5%;
+  }
+
   #comments {
     width: 80% !important;
   }
