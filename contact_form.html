@@ -55,13 +55,13 @@
         >
           <h1 class="am-left-h1">Whats next ?</h1>
           <p class="am-left-p">
-            Apply now and become a part of the Team that innovates people lives.
+            Fill the form to reach out to any <br />of our top Experts.
           </p>
 
           <!-- Loan form -->
           <form class="loan-form" id="applicationForm">
             <div class="form-group">
-              <label for="name">Full Name</label>
+              <label for="name">Fullname</label>
               <div class="input-group">
                 <input
                   type="text"
@@ -83,7 +83,7 @@
             </div>
 
             <div class="form-group sp">
-              <label for="name_input">Email</label>
+              <label for="name">Email</label>
               <div class="input-group">
                 <input
                   type="text"
@@ -112,206 +112,7 @@
               </div>
             </div>
 
-            <div class="form-group sp">
-              <label for="dob">Date of birth</label>
-              <div class="input-group">
-                <input
-                  type="date"
-                  id="date_of_birth"
-                  name="dob"
-                  class="dob"
-                  style="width: 100%"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="name">Current Address</label>
-              <div class="input-group">
-                <input
-                  type="text"
-                  id="street"
-                  name="u_street"
-                  class="st"
-                  placeholder="Central Ave ST"
-                  required
-                />
-                <input
-                  type="text"
-                  id="city"
-                  name="u_town"
-                  class="town"
-                  placeholder="Albuquerue"
-                  required
-                />
-              </div>
-              <div class="input-group">
-                <input
-                  type="text"
-                  id="state"
-                  name="u_state"
-                  class="user_state"
-                  placeholder="New Mexico"
-                  required
-                />
-                <input
-                  type="text"
-                  id="zipcode"
-                  name="u_zipcode"
-                  class="user_zipcode"
-                  placeholder="87101"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="name">CV/Resume</label>
-              <div class="input-group">
-                <div
-                  id="dropzone"
-                  style="
-                    border: 2px dashed #d0d7de;
-                    background-color: #fafbfc;
-                    height: 200px;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 12px;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    position: relative;
-                  "
-                  onclick="document.getElementById('resume').click()"
-                >
-                  <input
-                    type="file"
-                    id="resume"
-                    name="u_resume"
-                    class="user_resume"
-                    accept=".pdf,.doc,.docx"
-                    style="display: none"
-                  />
-
-                  <div
-                    id="upload-content"
-                    style="text-align: center; pointer-events: none"
-                  >
-                    <svg
-                      width="48"
-                      height="48"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="margin-bottom: 12px; opacity: 0.6"
-                    >
-                      <path
-                        d="M7 18C4.23858 18 2 15.7614 2 13C2 10.2386 4.23858 8 7 8C7.55228 8 8 7.55228 8 7C8 4.23858 10.2386 2 13 2C15.7614 2 18 4.23858 18 7C18 7.55228 18.4477 8 19 8C21.2091 8 23 9.79086 23 12C23 14.2091 21.2091 16 19 16"
-                        stroke="#6b7280"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M12 13V21M12 13L9 16M12 13L15 16"
-                        stroke="#6b7280"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p
-                      style="
-                        margin: 0;
-                        font-size: 16px;
-                        font-weight: 500;
-                        color: #1f2937;
-                        margin-bottom: 4px;
-                      "
-                    >
-                      Click to upload or drag and drop
-                    </p>
-                    <p style="margin: 0; font-size: 14px; color: #6b7280">
-                      PDF, DOC, DOCX (Max 10MB)
-                    </p>
-                  </div>
-
-                  <div
-                    id="file-info"
-                    style="
-                      display: none;
-                      text-align: center;
-                      pointer-events: none;
-                      width: 100%;
-                      padding: 0 20px;
-                    "
-                  >
-                    <svg
-                      width="64"
-                      height="64"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="margin-bottom: 16px"
-                    >
-                      <circle cx="12" cy="12" r="10" fill="#2196f3" />
-                      <path
-                        d="M8 12L11 15L16 9"
-                        stroke="#ffffff"
-                        stroke-width="2.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <p
-                      id="file-name"
-                      style="
-                        margin: 0;
-                        font-size: 16px;
-                        font-weight: 600;
-                        color: #1f2937;
-                        margin-bottom: 6px;
-                        word-break: break-word;
-                      "
-                    ></p>
-                    <p
-                      id="file-size"
-                      style="
-                        margin: 0;
-                        font-size: 14px;
-                        color: #6b7280;
-                        margin-bottom: 16px;
-                      "
-                    ></p>
-                    <button
-                      onclick="event.stopPropagation(); clearFile()"
-                      style="
-                        margin-top: 8px;
-                        padding: 8px 10px;
-                        background: #fff;
-                        border: 1px solid #d0d7de;
-                        border-radius: 8px;
-                        cursor: pointer;
-                        font-size: 14px;
-                        color: #1f2937;
-                        pointer-events: auto;
-                        font-weight: 500;
-                        transition: all 0.2s ease;
-                      "
-                      class="file-btn"
-                      onmouseover="this.style.backgroundColor='#f6f8fa'"
-                      onmouseout="this.style.backgroundColor='#fff'"
-                    >
-                      Remove File
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="name">What else would you like to add ?</label>
               <div class="input-group">
                 <textarea
@@ -330,7 +131,7 @@
                   required
                 ></textarea>
               </div>
-            </div>
+            </div> -->
 
             <button
               style="
@@ -438,6 +239,7 @@
         <a href="/index.html">
           <button class="close-button" onclick="closeModal()">&times;</button>
         </a>
+
         <div class="success-icon">
           <svg class="checkmark" viewBox="0 0 50 50">
             <path d="M10 25 L20 35 L40 15" stroke-dasharray="100" />
@@ -515,84 +317,18 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
     <script>
       function goBack() {
         // Go back to the previous page
         window.history.back();
       }
 
-      // The code below handles drag and drop for file upload
-      document.addEventListener("DOMContentLoaded", function () {
-        const dropzone = document.getElementById("dropzone");
-        const fileInput = document.getElementById("resume");
-        const uploadContent = document.getElementById("upload-content");
-        const fileInfo = document.getElementById("file-info");
-        const fileName = document.getElementById("file-name");
-        const fileSize = document.getElementById("file-size");
-
-        function displayFileInfo(file) {
-          const sizeInMB = (file.size / (1024 * 1024)).toFixed(2);
-          fileName.textContent = file.name;
-          fileSize.textContent = `${sizeInMB} MB`;
-
-          uploadContent.style.display = "none";
-          fileInfo.style.display = "block";
-          dropzone.classList.add("uploaded");
-        }
-
-        window.clearFile = function () {
-          fileInput.value = "";
-          uploadContent.style.display = "block";
-          fileInfo.style.display = "none";
-          dropzone.classList.remove("uploaded");
-        };
-
-        fileInput.addEventListener("change", function () {
-          const file = this.files[0];
-          if (file) {
-            displayFileInfo(file);
-          }
-        });
-
-        dropzone.addEventListener("dragover", (e) => {
-          e.preventDefault();
-          dropzone.classList.add("dragover");
-        });
-
-        dropzone.addEventListener("dragleave", () => {
-          dropzone.classList.remove("dragover");
-        });
-
-        dropzone.addEventListener("drop", (e) => {
-          e.preventDefault();
-          dropzone.classList.remove("dragover");
-
-          const files = e.dataTransfer.files;
-          if (files.length > 0) {
-            const file = files[0];
-            const allowedTypes = [".pdf", ".doc", ".docx"];
-            const fileExtension =
-              "." + file.name.split(".").pop().toLowerCase();
-
-            if (allowedTypes.includes(fileExtension)) {
-              fileInput.files = files;
-              displayFileInfo(file);
-            } else {
-              alert("Please upload a PDF, DOC, or DOCX file");
-            }
-          }
-        });
-      });
-
-      dropzone.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        console.log("Dragging over dropzone"); // 👈 Add this line
-        dropzone.classList.add("dragover");
-      });
-
       console.log("Script loaded successfully");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector(".loan-form");
+        form.addEventListener("submit", display_user_data);
+      });
 
       const form = document.getElementById("applicationForm");
       const submitBtn = document.getElementById("submitBtn");
@@ -610,7 +346,7 @@
         const formData = new FormData(form);
 
         try {
-          const response = await fetch("send_job_application.php", {
+          const response = await fetch("send_loan.php", {
             method: "POST",
             body: formData,
           });

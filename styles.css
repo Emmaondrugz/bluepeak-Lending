@@ -1337,7 +1337,7 @@ footer {
 
 .loan-form {
   margin-top: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1404,7 +1404,7 @@ input:focus {
   border: 1px solid transparent;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .apply-main {
     flex-direction: column;
     justify-content: center;
