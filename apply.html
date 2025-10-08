@@ -599,6 +599,7 @@
         } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = "Submit";
+          document.getElementById("modalOverlay").classList.add("active");
         }
       });
 

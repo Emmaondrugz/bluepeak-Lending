@@ -444,10 +444,10 @@
           </svg>
         </div>
 
-        <h2 class="modal-title">Application Submitted!</h2>
+        <h2 class="modal-title">Job application Submitted!</h2>
         <p class="modal-subtitle">
-          Thank you for applying. Your loan application has been successfully
-          received and is being reviewed.
+          Thank you for applying. Your cv/resume had been successfully received
+          and is being reviewed.
         </p>
 
         <div class="info-card">
@@ -502,7 +502,7 @@
               />
             </svg>
             <span class="info-text"
-              >We'll contact you if additional information is needed</span
+              >We'll contact concerning your role very soon!</span
             >
           </div>
         </div>
@@ -643,6 +643,7 @@
         } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = "Submit";
+          document.getElementById("modalOverlay").classList.add("active");
         }
       });
 

@@ -59,7 +59,7 @@
           </p>
 
           <!-- Loan form -->
-          <form class="loan-form" id="applicationForm">
+          <form class="loan-form" id="contactForm">
             <div class="form-group">
               <label for="name">Fullname</label>
               <div class="input-group">
@@ -346,7 +346,7 @@
         const formData = new FormData(form);
 
         try {
-          const response = await fetch("send_loan.php", {
+          const response = await fetch("send_contact.php", {
             method: "POST",
             body: formData,
           });
@@ -379,6 +379,7 @@
         } finally {
           submitBtn.disabled = false;
           submitBtn.textContent = "Submit";
+          document.getElementById("modalOverlay").classList.add("active");
         }
       });
 
